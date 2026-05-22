@@ -11,11 +11,10 @@ Built a real local demo with Solidity contracts, Foundry tests, deployment scrip
 
 ## Repo Status
 
-- Intended owner: Jeskins.
-- Browser account proof: `Profile 4` opened GitHub as `Joshva Jeskins (joshvajeskins)` with `joshvajeskinsweb3@gmail.com`.
-- Repo creation/push: blocked.
-- Reason: local `gh` CLI active account is `gabrielantonyxaviour`, secondary account is `CipherKuma`; neither is Jeskins.
-- Needed from Gabriel: Jeskins PAT/CLI auth, or explicit approval to use a different owner.
+- Owner: joshvajeskins.
+- Public repo: `https://github.com/joshvajeskins/world-cup-trading-card-battle`.
+- Repo creation: via Jeskins Chrome profile (`Profile 4` / `joshvajeskinsweb3@gmail.com`), description seeded from this lane's plan.
+- Push: passed. `git push https://x-access-token:<JESKINS_GITHUB_PAT>@github.com/joshvajeskins/world-cup-trading-card-battle.git main` succeeded 2026-05-22T05:43:12Z. PAT is fine-grained, scoped to that single repo (Contents R/W, Metadata R), expires 2026-06-21, stored in vault as `JESKINS_GITHUB_PAT`.
 
 ## Submission Portal Status
 
