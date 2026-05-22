@@ -1,24 +1,22 @@
 # Deployments
 
-Last updated: 2026-05-22T01:38:16Z
+## X Layer Testnet (chain 1952)
 
-## X Layer Testnet
+**Deployed:** 2026-05-22T08:45Z
+**Deployer:** `0x57153c1910200E18a24519812B085467F3541278` (Jeskins persona)
 
-- Chain ID: `1952`
-- RPC smoke: passed, `cast chain-id --rpc-url https://testrpc.xlayer.tech/terigon` returned `1952`.
-- `WorldCupCards`: blocked, no `XLAYER_PRIVATE_KEY` or funded deployer available yet.
-- `AdminMatchResolver`: blocked, no `XLAYER_PRIVATE_KEY` or funded deployer available yet.
-- Explorer: `https://www.okx.com/web3/explorer/xlayer-test`
-- Local deployment dry-run: `forge script scripts/Deploy.s.sol:Deploy` succeeded; returned local dry-run addresses only, not X Layer addresses.
+| Contract | Address | Tx |
+|---|---|---|
+| WorldCupCards (ERC1155) | [`0xC8EBbcb28d651439dCB0D5Fa216De2DCdC55b15a`](https://www.okx.com/web3/explorer/xlayer-test/address/0xc8ebbcb28d651439dcb0d5fa216de2dcdc55b15a) | broadcast/Deploy.s.sol/1952/run-latest.json |
+| AdminMatchResolver | [`0x4a329Ce90EfB8f7c8Bbd9176C4aFA9da242041E8`](https://www.okx.com/web3/explorer/xlayer-test/address/0x4a329ce90efb8f7c8bbd9176c4afa9da242041e8) | broadcast/Deploy.s.sol/1952/run-latest.json |
 
-## Deploy Command
+Post-deploy: `WorldCupCards.setResolver(AdminMatchResolver)` — already wired in deploy script.
 
-```bash
-export XLAYER_TESTNET_RPC_URL=https://testrpc.xlayer.tech/terigon
-forge script scripts/Deploy.s.sol:Deploy \
-  --rpc-url "$XLAYER_TESTNET_RPC_URL" \
-  --private-key "$XLAYER_PRIVATE_KEY" \
-  --broadcast
-```
+## RPC
 
-Do not run broadcast without a Gabriel-approved funded deployer path.
+- `https://testrpc.xlayer.tech/terigon`
+- Chain ID: 1952
+
+## Proof artifacts
+
+- `broadcast/Deploy.s.sol/1952/run-latest.json` — full forge broadcast record
