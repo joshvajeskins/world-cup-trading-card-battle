@@ -1,0 +1,26 @@
+{
+  "name": "x-cup-card-battle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test:contracts": "forge test",
+    "smoke:xlayer": "cast chain-id --rpc-url ${XLAYER_TESTNET_RPC_URL:-https://testrpc.xlayer.tech/terigon}"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "lucide-react": "^0.554.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "viem": "^2.40.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6"
+  }
+}

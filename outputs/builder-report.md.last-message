@@ -1,0 +1,21 @@
+Built and verified the hackathon execution as `demo-ready`.
+
+The final report is here: [outputs/builder-report.md](/Users/gabrielantonyxaviour/Documents/hackathons/x-layer-x-cup-hackathon-2026/execution/2026-05-22T01-33-56Z-world-cup-trading-card-battle/outputs/builder-report.md)
+
+What’s working:
+- Real Solidity contracts: `WorldCupCards` + `AdminMatchResolver`
+- Foundry tests: `forge test` passed, 5/5
+- Frontend build: `pnpm build` passed
+- X Layer RPC smoke: `1952` from testnet RPC
+- Local browser proof: app opened, resolver flow clicked, `BattleResolved` observed
+- Local visual QA: 375 / 768 / 1440 screenshots captured in `outputs/screenshots/`
+- Dev server is running at `http://127.0.0.1:5177/`
+
+What is blocked:
+- X Layer deployment: no `XLAYER_PRIVATE_KEY`, `PRIVATE_KEY`, or `DEPLOYER_PRIVATE_KEY` available.
+- Jeskins repo push: browser proves Jeskins GitHub is logged in, but local `gh` auth is Gabriel/CipherKuma, not Jeskins.
+- Formal `/polish`: M2 SSH timed out, so local visual QA fallback was used.
+- Final submission/X post: not attempted, per approval gate.
+
+Official sources checked: [X Cup page](https://web3.okx.com/xlayer/build-x-hackathon/xcup) and [X Layer network info](https://web3.okx.com/xlayer/docs/developer/build-on-xlayer/network-information).
+
